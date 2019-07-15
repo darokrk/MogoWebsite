@@ -1,0 +1,15 @@
+*, *::before, *::after { box-sizing: border-box; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+html { font-size: 62.5%; }
+
+body { font-size: 1.6rem; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
+
+.header { height: 100vh; background: url("../../images/Clip.jpg") no-repeat center; }
+
+.header__top-wrapper { display: -ms-flexbox; display: flex; max-width: 1200px; -ms-flex-pack: justify; justify-content: space-between; margin: 0 auto; padding-top: 20px; border: 1px solid black; }
+
+.logo-content { font-size: 3rem; color: #fff; font-weight: bold; }
+
+.header-nav { border: 1px solid white; }
+
+.nav-list { display: -ms-flexbox; display: flex; width: 620px; -ms-flex-pack: distribute; justify-content: space-around; list-style: none; color: #fff; font-size: 1.4rem; }
