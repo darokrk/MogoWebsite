@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%
+    /* 1 rem === 10px */
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+$white: #fff;
+
+.header {
+  height: 100vh;
+  background: url('../../images/Clip.jpg') no-repeat center;
+  position: relative;
+}
+
+.header__top-wrapper {
+  display: flex;
+  position: relative;
+  max-width: 1200px;
+  justify-content: space-between;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 20px;
+  opacity: .9;
+}
+
+.logo-content {
+  font-size: 3rem;
+  color: $white;
+  font-weight: 900;
+}
+
+.header-nav {
+  max-width: 620px;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  color: $white;
+  font-size: 1.4rem;
+  padding: 0;
+}
+
+.header__content-wrapper {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-180deg, #f38181, #fce38a);
+  opacity: .9;
+}
+
+.header__slogan-wrapper {
+  display: flex;
+  max-width: 850px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: $white;
+}
+
+.header__subslogan {
+  font-size: 7.2rem;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.header__slogan {
+  font-size: 15rem;
+  text-transform: uppercase;
+  margin: 20px 0 40px;
+  line-height: 140px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 70px auto 0;
+    background: $white;
+  }
+}
+
+.header__btn {
+  width: 160px;
+  height: 40px;
+  background: inherit;
+  border: 3px solid $white;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $white;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.header__slider-wrapper {
+  position: absolute;
+  max-width: 1200px;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.header__slider-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  color: $white;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: .9;
+}
+
+.slider-list__element {
+  flex: 1;
+  padding: 20px 20px 20px 0;
+  margin: 0 10px;
+  border-top: 3px solid $white;
+}
+
+.slider-list__number {
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: 5px;
+}
