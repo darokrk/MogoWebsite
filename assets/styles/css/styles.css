@@ -6,7 +6,7 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .container { max-width: 1200px; margin: auto; padding: 0 20px; }
 
-.section--padding { padding: 80px 0; }
+.section--padding { padding: 80px 0 20px; }
 
 .bg--gradient, .header__content-wrapper, .about-gallery__layer { background-image: linear-gradient(-180deg, #f38181, #fce38a); }
 
@@ -54,9 +54,9 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .section-title::after { content: ""; display: block; width: 60px; height: 3px; margin: 30px auto 0; background: #f38181; }
 
-.section-text { font-family: 'Roboto', sans-serif; margin-top: 20px; color: #999; font-size: 15px; line-height: 24px; }
+.section-text, .service-content__paragraph { font-family: 'Roboto', sans-serif; margin-top: 20px; color: #999; font-size: 15px; line-height: 24px; }
 
-.about-gallery__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(280px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); grid-column-gap: 30px; grid-row-gap: 30px; padding-bottom: 110px; }
+.about-gallery__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(280px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); grid-column-gap: 30px; grid-row-gap: 30px; padding: 60px 0 110px; }
 
 .about-gallery__element { position: relative; transition: .8s; }
 
@@ -83,3 +83,17 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 .facts-element__number { width: 100%; font-size: 70px; font-weight: 700; }
 
 .facts-element__text { text-transform: uppercase; margin-top: 5px; }
+
+.service-content__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(350px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); -ms-grid-rows: (1fr)[2]; grid-template-rows: repeat(2, 1fr); -ms-flex-pack: center; justify-content: center; padding: 20px 0 40px; }
+
+.service-content__element { display: -ms-flexbox; display: flex; padding: 40px 20px; }
+
+.service-content__element:nth-of-type(1), .service-content__element:nth-of-type(2), .service-content__element:nth-of-type(3) { border-bottom: 1px solid rgba(151, 151, 151, 0.4); }
+
+.service-content__text { padding: 0 20px; }
+
+.service-content__title { font-size: 14px; text-transform: uppercase; margin: 0; }
+
+.service-content__paragraph { font-size: 14px; margin-top: 10px; }
+
+.icon-alarm, .icon-image, .icon-display, .icon-file-text2, .icon-home, .icon-codepen { width: 30px; height: 30px; color: #95E1D3; margin-top: 5px; }
