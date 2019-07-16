@@ -2,9 +2,17 @@
 
 html { font-size: 62.5%; /* 1 rem === 10px */ }
 
-body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans-serif; }
+body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans-serif; color: #333; }
 
-.header { height: 100vh; background: url("../../images/Clip.jpg") no-repeat center; position: relative; }
+.container { max-width: 1200px; margin: auto; padding: 0 20px; }
+
+.section--padding { padding: 80px 0; }
+
+.bg--gradient, .header__content-wrapper, .about-gallery__layer { background-image: linear-gradient(-180deg, #f38181, #fce38a); }
+
+.flex-center, .header__content-wrapper, .header__slogan-wrapper, .section-header__wrapper, .about-gallery__layer { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.header { height: 100vh; background: url("../../images/Layer 15.jpg") no-repeat center; position: relative; }
 
 .header__top-wrapper { display: -ms-flexbox; display: flex; position: relative; max-width: 1200px; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; z-index: 1; margin: 0 auto; padding: 20px; opacity: 0.9; }
 
@@ -12,19 +20,19 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .header-nav { max-width: 620px; width: 100%; }
 
-.nav-list { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; list-style: none; font-size: 1.4rem; margin: 0; padding: 0; }
+.nav-list { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; list-style: none; font-size: 1.4rem; margin: 0; padding: 0; }
 
 .nav-list__link { text-decoration: none; text-transform: uppercase; color: #fff; padding: 10px 0; }
 
 .nav-list__link:hover { color: #fce38a; border-bottom: 3px solid #fce38a; }
 
-.header__content-wrapper { position: absolute; display: -ms-flexbox; display: flex; width: 100%; height: 100%; top: 0; left: 0; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; background-image: linear-gradient(-180deg, #f38181, #fce38a); opacity: 0.9; }
+.header__content-wrapper { position: absolute; width: 100%; height: 100%; top: 0; left: 0; -ms-flex-direction: column; flex-direction: column; opacity: 0.9; }
 
-.header__slogan-wrapper { display: -ms-flexbox; display: flex; max-width: 850px; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; text-align: center; color: #fff; }
+.header__slogan-wrapper { max-width: 850px; -ms-flex-direction: column; flex-direction: column; color: #fff; }
 
-.header__subslogan { font-size: 7.2rem; font-family: "Kaushan Script", cursive; }
+.header__subslogan { font-size: 7.45vmin; font-family: "Kaushan Script", cursive; }
 
-.header__slogan { font-size: 15rem; text-transform: uppercase; margin: 20px 0 40px; line-height: 140px; }
+.header__slogan { font-size: 15.9vmin; text-transform: uppercase; margin: 20px 0 40px; line-height: 15vmin; }
 
 .header__slogan::after { content: ""; display: block; width: 60px; height: 3px; margin: 70px auto 0; background: #fff; }
 
@@ -37,3 +45,29 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 .slider-list__element { -ms-flex: 1; flex: 1; padding: 20px 20px 20px 0; margin: 0 10px; border-top: 3px solid #fff; }
 
 .slider-list__number { font-size: 22px; font-weight: 700; margin-right: 5px; }
+
+.section-header__wrapper { max-width: 960px; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; }
+
+.section-subtitle { font-size: 24px; font-family: "Kaushan Script", cursive; }
+
+.section-title { text-transform: uppercase; font-size: 30px; margin: 10px 0 20px; }
+
+.section-title::after { content: ""; display: block; width: 60px; height: 3px; margin: 30px auto 0; background: #f38181; }
+
+.section-text { font-family: 'Roboto', sans-serif; margin-top: 20px; color: #999; font-size: 15px; line-height: 24px; }
+
+.about-gallery__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(280px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); grid-column-gap: 30px; grid-row-gap: 30px; padding-bottom: 110px; }
+
+.about-gallery__element { position: relative; transition: .8s; }
+
+.about-gallery__element:hover { transform: translate(-10px, -10px); box-shadow: 10px 10px 0 0 #95E1D3; cursor: pointer; }
+
+.about-gallery__element:hover .about-gallery__layer { opacity: .9; }
+
+.about-gallery__image { width: 100%; height: auto; -o-object-fit: cover; object-fit: cover; vertical-align: middle; }
+
+.about-gallery__layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; -ms-flex-direction: column; flex-direction: column; color: #fff; opacity: 0; transition: .5s; }
+
+.about-gallery__layer .icon-users, .about-gallery__layer .icon-headphones, .about-gallery__layer .icon-leaf { width: 1.8em; height: 1.8em; margin-bottom: 5px; }
+
+.about-layer__text { font-size: 18px; font-weight: 700; text-transform: uppercase; }

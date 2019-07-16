@@ -16,15 +16,40 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  color: #333;
 }
 
 $white: #fff;
 $yellow: #fce38a;
-$orange: #f38181;
+$red: #f38181;
+$grey: #999;
+$green: #95E1D3;
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section--padding {
+  padding: 80px 0;
+}
+
+.bg--gradient {
+  background-image: linear-gradient(-180deg, $red, $yellow);
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//----------------------//
 
 .header {
   height: 100vh;
-  background: url("../../images/Clip.jpg") no-repeat center;
+  background: url("../../images/Layer 15.jpg") no-repeat center;
   position: relative;
 }
 
@@ -54,6 +79,7 @@ $orange: #f38181;
 .nav-list {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   list-style: none;
   font-size: 1.4rem;
   margin: 0;
@@ -65,6 +91,7 @@ $orange: #f38181;
   text-transform: uppercase;
   color: $white;
   padding: 10px 0;
+
   &:hover {
     color: $yellow;
     border-bottom: 3px solid $yellow;
@@ -73,37 +100,33 @@ $orange: #f38181;
 
 .header__content-wrapper {
   position: absolute;
-  display: flex;
+  @extend .flex-center;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(-180deg, $orange, $yellow);
+  @extend .bg--gradient;
   opacity: 0.9;
 }
 
 .header__slogan-wrapper {
-  display: flex;
+  @extend .flex-center;
   max-width: 850px;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   color: $white;
 }
 
 .header__subslogan {
-  font-size: 7.2rem;
+  font-size: 7.45vmin;
   font-family: "Kaushan Script", cursive;
 }
 
 .header__slogan {
-  font-size: 15rem;
+  font-size: 15.9vmin;
   text-transform: uppercase;
   margin: 20px 0 40px;
-  line-height: 140px;
+  line-height: 15vmin;
 
   &::after {
     content: "";
@@ -160,4 +183,99 @@ $orange: #f38181;
   font-size: 22px;
   font-weight: 700;
   margin-right: 5px;
+}
+
+//----- ABOUT -----//
+
+.section-header__wrapper {
+  @extend .flex-center;
+  max-width: 960px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  font-family: "Kaushan Script", cursive;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 10px 0 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto 0;
+    background: $red;
+  }
+}
+
+.section-text {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  color: $grey;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.about-gallery__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  padding-bottom: 110px;
+}
+
+.about-gallery__element {
+  position: relative;
+  transition: .8s;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 0 $green;
+    cursor: pointer;
+
+    .about-gallery__layer {
+      opacity: .9;
+    }
+  }
+}
+
+.about-gallery__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.about-gallery__layer {
+  position: absolute;
+  @extend .flex-center;
+  @extend .bg--gradient;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  color: $white;
+  opacity: 0;
+  transition: .5s;
+
+  .icon-users,
+  .icon-headphones,
+  .icon-leaf {
+    width: 1.8em;
+    height: 1.8em;
+    margin-bottom: 5px;
+  }
+}
+
+.about-layer__text {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
