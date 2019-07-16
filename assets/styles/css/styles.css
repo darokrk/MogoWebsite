@@ -52,6 +52,6 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .section-text { font-family: 'Roboto', sans-serif; margin-top: 20px; color: #999; font-size: 15px; line-height: 24px; }
 
-.about-gallery__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(320px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); grid-column-gap: 30px; grid-row-gap: 30px; margin-bottom: 110px; }
+.about-gallery__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(280px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); grid-column-gap: 30px; grid-row-gap: 30px; margin-bottom: 110px; }
 
 .about-gallery__image { width: 100%; height: auto; -o-object-fit: cover; object-fit: cover; vertical-align: middle; }
