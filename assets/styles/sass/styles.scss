@@ -23,6 +23,7 @@ $white: #fff;
 $yellow: #fce38a;
 $red: #f38181;
 $grey: #999;
+$green: #95E1D3;
 
 .container {
   max-width: 1200px;
@@ -223,9 +224,15 @@ $grey: #999;
   margin-bottom: 110px;
 }
 
-// .about-gallery__element {
-//   height: 100%;
-// }
+.about-gallery__element {
+  transition: .8s;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 0 $green;
+    cursor: pointer;
+  }
+}
 
 .about-gallery__image {
   width: 100%;
