@@ -46,7 +46,7 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .slider-list__number { font-size: 22px; font-weight: 700; margin-right: 5px; }
 
-.section-header__wrapper { max-width: 960px; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; }
+.section-header__wrapper { max-width: 960px; -ms-flex-direction: column; flex-direction: column; margin: 0 auto; text-align: center; }
 
 .section-subtitle { font-size: 24px; font-family: "Kaushan Script", cursive; }
 
