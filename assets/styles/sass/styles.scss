@@ -16,15 +16,26 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  color: #333;
 }
 
 $white: #fff;
 $yellow: #fce38a;
-$orange: #f38181;
+$red: #f38181;
+$grey: #999;
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section--padding {
+  padding: 80px 20px;
+}
 
 .header {
   height: 100vh;
-  background: url("../../images/Clip.jpg") no-repeat center;
+  background: url("../../images/Layer 15.jpg") no-repeat center;
   position: relative;
 }
 
@@ -65,6 +76,7 @@ $orange: #f38181;
   text-transform: uppercase;
   color: $white;
   padding: 10px 0;
+
   &:hover {
     color: $yellow;
     border-bottom: 3px solid $yellow;
@@ -81,7 +93,7 @@ $orange: #f38181;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(-180deg, $orange, $yellow);
+  background-image: linear-gradient(-180deg, $red, $yellow);
   opacity: 0.9;
 }
 
@@ -160,4 +172,43 @@ $orange: #f38181;
   font-size: 22px;
   font-weight: 700;
   margin-right: 5px;
+}
+
+//----- ABOUT -----//
+
+.section-header__wrapper {
+  display: flex;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  font-family: "Kaushan Script", cursive;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 10px 0 20px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto 0;
+    background: $red;
+  }
+}
+
+.section-text {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+  color: $grey;
+  font-size: 15px;
+  line-height: 24px;
 }
