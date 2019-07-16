@@ -54,8 +54,16 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .about-gallery__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(280px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); grid-column-gap: 30px; grid-row-gap: 30px; margin-bottom: 110px; }
 
-.about-gallery__element { transition: .8s; }
+.about-gallery__element { position: relative; transition: .8s; }
 
 .about-gallery__element:hover { transform: translate(-10px, -10px); box-shadow: 10px 10px 0 0 #95E1D3; cursor: pointer; }
 
+.about-gallery__element:hover .about-gallery__layer { opacity: .9; }
+
 .about-gallery__image { width: 100%; height: auto; -o-object-fit: cover; object-fit: cover; vertical-align: middle; }
+
+.about-gallery__layer { position: absolute; display: -ms-flexbox; display: flex; top: 0; left: 0; width: 100%; height: 100%; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; color: #fff; background-image: linear-gradient(-180deg, #f38181, #fce38a); opacity: 0; transition: .5s; }
+
+.about-gallery__layer .icon-users, .about-gallery__layer .icon-headphones, .about-gallery__layer .icon-leaf { width: 1.8em; height: 1.8em; margin-bottom: 5px; }
+
+.about-layer__text { font-size: 18px; font-weight: 700; text-transform: uppercase; }
