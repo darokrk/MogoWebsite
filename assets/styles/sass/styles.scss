@@ -280,3 +280,47 @@ $green: #95E1D3;
   font-weight: 700;
   text-transform: uppercase;
 }
+
+//--- FACTS ---//
+
+.facts {
+  background-color: $green;
+}
+
+.facts-content__wrapper {
+  display: flex;
+  min-height: 230px;
+  align-items: center;
+  flex-wrap: wrap;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  color: $white;
+}
+
+.facts-content__element {
+  flex: 1;
+  @extend .flex-center;
+  min-width: 230px;
+  flex-direction: column;
+  align-self: stretch;
+  padding: 40px 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  ;
+  font-size: 14px;
+  text-align: center;
+
+  &:nth-last-of-type(1) {
+    border-right: none;
+  }
+}
+
+.facts-element__number {
+  width: 100%;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.facts-element__text {
+  text-transform: uppercase;
+  margin-top: 5px;
+}
