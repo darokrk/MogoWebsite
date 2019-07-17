@@ -370,7 +370,8 @@ $green: #95e1d3;
 .icon-codepen,
 .icon-circle-down,
 .icon-equalizer2,
-.icon-target {
+.icon-target,
+.icon-bubbles2 {
   width: 30px;
   height: 30px;
   color: $green;
@@ -490,4 +491,92 @@ $green: #95e1d3;
   line-height: 24px;
   padding: 20px;
   margin: 0;
+}
+
+//--- QUOTES ---//
+
+.quotes {
+  background-color: #f8f8f8;
+}
+
+// .owl-item {
+//   border: 1px solid red;
+// }
+
+.item {
+  // border: 1px solid blue;
+  display: flex;
+  max-width: 80%;
+  height: 290px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.owl-prev,
+.owl-next {
+  width: 15px;
+  height: inherit;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block !important;
+  cursor: pointer;
+  background: none !important;
+}
+
+.owl-prev {
+  left: 1vmin;
+}
+
+.owl-next {
+  right: 1vmin;
+}
+.owl-prev span,
+.owl-next span {
+  color: #ccc;
+  font-size: 50px;
+  &:hover {
+    color: $red;
+  }
+}
+
+.quotes-icon__wrapper {
+  border: 3px solid $green;
+  padding: 20px 30px;
+}
+
+.icon-bubbles2 {
+  width: 9.5vmin;
+  height: 9.5vmin;
+}
+
+.quotes-text__wrapper {
+  max-width: 760px;
+  padding: 20px 40px;
+}
+
+.quotes-blockquote {
+  font-size: 24px;
+  color: $grey;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  line-height: 36px;
+  margin: 30px 20px 20px;
+}
+
+.blockquote-author {
+  display: flex;
+  align-items: center;
+  font-family: "Kaushan Script", cursive;
+  color: black;
+  margin-top: 10px;
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $red;
+    margin-right: 10px;
+  }
 }
