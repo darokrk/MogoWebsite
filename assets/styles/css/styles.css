@@ -96,7 +96,7 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .service-content__paragraph { font-size: 14px; margin-top: 10px; }
 
-.icon-alarm, .icon-image, .icon-display, .icon-file-text2, .icon-home, .icon-codepen { width: 30px; height: 30px; color: #95e1d3; margin-top: 5px; }
+.icon-alarm, .icon-image, .icon-display, .icon-file-text2, .icon-home, .icon-codepen, .icon-circle-down, .icon-equalizer2, .icon-target { width: 30px; height: 30px; color: #95e1d3; margin-top: 5px; }
 
 .feature { position: relative; min-height: 850px; height: 100%; background: url("../../images/Layer 45.jpg") no-repeat; background-position: 93% 32%; margin-bottom: 50px; }
 
@@ -107,3 +107,25 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 .feature__tablet-img { width: 51vmin; top: 32%; left: 36%; }
 
 .feature__phone-img { width: 29.5vmin; left: 55%; top: 55.5%; }
+
+.description-content__wrapper { display: -ms-grid; display: grid; border: 1px solid; -ms-grid-columns: (minmax(564px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(564px, 1fr)); grid-column-gap: 30px; margin-bottom: 200px; }
+
+.description-img { width: 100%; height: auto; -o-object-fit: cover; object-fit: cover; vertical-align: middle; }
+
+.description-modal__wrapper { display: -ms-grid; display: grid; -ms-grid-rows: (60px)[auto-fill]; grid-template-rows: repeat(auto-fill, 60px); grid-gap: 10px; -ms-flex-line-pack: justify; align-content: space-between; }
+
+.description-modal__wrapper .description-modal__element { border: 1px solid rgba(151, 151, 151, 0.4); }
+
+.description-modal__wrapper .description-modal__element:nth-child(1) { grid-row: 3/4; }
+
+.description-modal__wrapper .description-modal__element:nth-child(2) { grid-row: 4/5; }
+
+.description-modal__wrapper .description-modal__element:nth-child(3) { -ms-grid-row: 5; grid-row: 5; }
+
+.modal-element__header { display: -ms-flexbox; display: flex; height: 100%; -ms-flex-align: center; align-items: center; }
+
+.modal-element__header .icon { margin-top: 0; margin: 0 20px; }
+
+.modal-element__header .icon-circle-down { width: 20px; height: 20px; margin-left: auto; color: #999; }
+
+.modal-header__title { font-size: 14px; text-transform: uppercase; margin: 0; }
