@@ -108,7 +108,7 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .feature__phone-img { width: 29.5vmin; left: 55%; top: 55.5%; }
 
-.description-content__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(564px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(564px, 1fr)); grid-column-gap: 30px; margin: 80px 0; }
+.description-content__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(564px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(564px, 1fr)); grid-column-gap: 30px; margin: 60px 0 80px; }
 
 .description-img { width: 100%; height: auto; -o-object-fit: cover; object-fit: cover; vertical-align: middle; }
 
@@ -116,18 +116,12 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .modal-element__header { display: -ms-flexbox; display: flex; height: 100%; -ms-flex-align: center; align-items: center; border: 1px solid rgba(151, 151, 151, 0.4); }
 
-.modal-element__header .icon { margin-top: 0; margin: 0 20px; }
+.modal-element__header .icon { margin-top: 0; margin: 0 20px; cursor: pointer; }
 
 .modal-element__header .icon-circle-down { width: 20px; height: 20px; margin-left: auto; color: #999; }
 
 .modal-header__title { font-size: 14px; text-transform: uppercase; margin: 0; padding: 20px 0; }
 
 .modal-element-content { max-height: 198px; overflow-y: scroll; display: none; border-left: 1px solid rgba(151, 151, 151, 0.4); }
-
-.modal-element-content::-webkit-scrollbar { background-color: rgba(255, 255, 255, 0.4); width: 100px; }
-
-.modal-element-content::-webkit-scrollbar-track { background-color: rgba(151, 151, 151, 0.4); margin: 10px; border-radius: 20px; padding-right: 10px; border: 1px solid red; background-clip: padding-box; }
-
-.modal-element-content::-webkit-scrollbar-thumb { background-color: #95e1d3; border-radius: 20px; border: 1px solid red; background-clip: padding-box; }
 
 .modal-element-text { font-size: 15; color: #999; font-style: italic; line-height: 24px; padding: 20px; margin: 0; }
