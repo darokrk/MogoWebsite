@@ -23,7 +23,7 @@ $white: #fff;
 $yellow: #fce38a;
 $red: #f38181;
 $grey: #999;
-$green: #95E1D3;
+$green: #95e1d3;
 
 .container {
   max-width: 1200px;
@@ -217,7 +217,7 @@ $green: #95E1D3;
 }
 
 .section-text {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 20px;
   color: $grey;
   font-size: 15px;
@@ -234,7 +234,7 @@ $green: #95E1D3;
 
 .about-gallery__element {
   position: relative;
-  transition: .8s;
+  transition: 0.8s;
 
   &:hover {
     transform: translate(-10px, -10px);
@@ -242,7 +242,7 @@ $green: #95E1D3;
     cursor: pointer;
 
     .about-gallery__layer {
-      opacity: .9;
+      opacity: 0.9;
     }
   }
 }
@@ -265,7 +265,7 @@ $green: #95E1D3;
   flex-direction: column;
   color: $white;
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 
   .icon-users,
   .icon-headphones,
@@ -306,7 +306,6 @@ $green: #95E1D3;
   align-self: stretch;
   padding: 40px 20px;
   border-right: 1px solid rgba(255, 255, 255, 0.4);
-  ;
   font-size: 14px;
   text-align: center;
 
@@ -373,4 +372,41 @@ $green: #95E1D3;
   height: 30px;
   color: $green;
   margin-top: 5px;
+}
+
+//--- FEATURE ---//
+
+.feature {
+  position: relative;
+  min-height: 850px;
+  height: 100%;
+  background: url("../../images/Layer\ 45.jpg") no-repeat;
+  background-position: 93% 32%;
+  margin-bottom: 200px;
+}
+
+.feature-overflow__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.feature__tablet-img,
+.feature__phone-img {
+  position: absolute;
+}
+
+.feature__tablet-img {
+  width: 51vmin;
+  top: 32%;
+  left: 36%;
+}
+
+.feature__phone-img {
+  width: 29.5vmin;
+  left: 55%;
+  top: 55.5%;
 }
