@@ -122,6 +122,12 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .modal-header__title { font-size: 14px; text-transform: uppercase; margin: 0; padding: 20px 0; }
 
-.modal-element-content { max-height: 198px; overflow-y: scroll; display: none; border-left: 1px solid rgba(151, 151, 151, 0.4); }
+.modal-element-content { max-height: 198px; overflow-y: scroll; display: none; border-left: 1px solid rgba(151, 151, 151, 0.4); border-right: 1px solid rgba(151, 151, 151, 0.4); }
+
+.modal-element-content::-webkit-scrollbar { background-color: rgba(255, 255, 255, 0.4); width: 10px; }
+
+.modal-element-content::-webkit-scrollbar-track { background-color: rgba(151, 151, 151, 0.4); margin: 5px; border-radius: 20px; }
+
+.modal-element-content::-webkit-scrollbar-thumb { background-color: #95e1d3; border-radius: 20px; }
 
 .modal-element-text { font-size: 15; color: #999; font-style: italic; line-height: 24px; padding: 20px; margin: 0; }

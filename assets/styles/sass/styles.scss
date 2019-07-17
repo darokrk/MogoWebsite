@@ -465,26 +465,21 @@ $green: #95e1d3;
   overflow-y: scroll;
   display: none;
   border-left: 1px solid rgba(151, 151, 151, 0.4);
+  border-right: 1px solid rgba(151, 151, 151, 0.4);
 
-  // &::-webkit-scrollbar {
-  //   background-color: rgba(255, 255, 255, 0.4);
-  //   width: 100px;
-  // }
-  // &::-webkit-scrollbar-track {
-  //   background-color: rgba(151, 151, 151, 0.4);
-  //   margin: 10px;
-  //   border-radius: 20px;
-  //   padding-right: 10px;
-  //   border: 1px solid red;
-  //   background-clip: padding-box;
-  // }
-  // &::-webkit-scrollbar-thumb {
-  //   background-color: $green;
-  //   border-radius: 20px;
-  //   border: 1px solid red;
-  //   background-clip: padding-box;
-  //   // outline: 1px solid slategrey;
-  // }
+  &::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 10px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: rgba(151, 151, 151, 0.4);
+    margin: 5px;
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $green;
+    border-radius: 20px;
+  }
 }
 
 .modal-element-text {
