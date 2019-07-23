@@ -689,3 +689,22 @@ $green: #95e1d3;
   font-weight: 300;
   font-style: italic;
 }
+
+//--- LOGOS ---//
+
+.logos {
+  background: #f8f8f8;
+}
+
+.logos__wrapper {
+  display: flex;
+  min-height: 250px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logos__element {
+  @extend .flex-center;
+  min-height: 155px;
+}
