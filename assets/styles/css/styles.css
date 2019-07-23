@@ -10,7 +10,7 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .bg--gradient, .header__content-wrapper, .about-gallery__layer { background-image: linear-gradient(-180deg, #f38181, #fce38a); }
 
-.flex-center, .header__content-wrapper, .header__slogan-wrapper, .section-header__wrapper, .about-gallery__layer, .facts-content__element { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.flex-center, .header__content-wrapper, .header__slogan-wrapper, .section-header__wrapper, .about-gallery__layer, .facts-content__element, .team-gallery__layer, .team-gallery__title { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .header { height: 100vh; background: url("../../images/Layer 15.jpg") no-repeat center; position: relative; }
 
@@ -84,7 +84,7 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .facts-element__text { text-transform: uppercase; margin-top: 5px; }
 
-.service-content__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(350px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); -ms-grid-rows: (1fr)[2]; grid-template-rows: repeat(2, 1fr); -ms-flex-pack: center; justify-content: center; padding: 20px 0 40px; }
+.service-content__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(auto, 350px))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(auto, 350px)); -ms-grid-rows: (1fr)[2]; grid-template-rows: repeat(2, 1fr); -ms-flex-pack: center; justify-content: center; padding: 20px 0 40px; }
 
 .service-content__element { display: -ms-flexbox; display: flex; padding: 40px 20px; }
 
@@ -96,7 +96,7 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .service-content__paragraph { font-size: 14px; margin-top: 10px; }
 
-.icon-alarm, .icon-image, .icon-display, .icon-file-text2, .icon-home, .icon-codepen, .icon-circle-down, .icon-equalizer2, .icon-target, .icon-bubbles2 { width: 30px; height: 30px; color: #95e1d3; margin-top: 5px; }
+.icon-alarm, .icon-image, .icon-display, .icon-file-text2, .icon-home, .icon-codepen, .icon-circle-down, .icon-equalizer2, .icon-target, .icon-bubbles2, .icon-facebook, .icon-twitter, .icon-pinterest2, .icon-instagram { width: 30px; height: 30px; color: #95e1d3; margin-top: 5px; }
 
 .feature { position: relative; min-height: 850px; height: 100%; background: url("../../images/Layer 45.jpg") no-repeat; background-position: 93% 32%; margin-bottom: 50px; }
 
@@ -108,7 +108,7 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .feature__phone-img { width: 29.5vmin; left: 55%; top: 55.5%; }
 
-.description-content__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(564px, 1fr))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(564px, 1fr)); grid-column-gap: 30px; grid-row-gap: 30px; margin: 60px 0 80px; }
+.description-content__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(auto, 564px))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(auto, 564px)); grid-column-gap: 30px; grid-row-gap: 30px; margin: 60px 0 80px; }
 
 .description-img { width: 100%; height: auto; -o-object-fit: cover; object-fit: cover; vertical-align: middle; }
 
@@ -157,3 +157,31 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 .blockquote-author { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; font-family: "Kaushan Script", cursive; color: black; margin-top: 10px; }
 
 .blockquote-author::before { content: ""; display: block; width: 60px; height: 3px; background-color: #f38181; margin-right: 10px; }
+
+.team .container { padding: 0; }
+
+.team-gallery__wrapper { display: -ms-grid; display: grid; -ms-grid-columns: (minmax(auto, 380px))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(auto, 380px)); grid-column-gap: 30px; grid-row-gap: 30px; padding: 20px 0 60px; }
+
+.team-gallery__img-wrapper { position: relative; height: 470px; margin: 0; transition: 0.8s; }
+
+.team-gallery__img-wrapper:nth-of-type(1) .team-gallery__img { -o-object-position: 20%; object-position: 20%; }
+
+.team-gallery__img-wrapper:hover { transform: translate(-10px, -10px); box-shadow: 10px 10px 0 0 #95e1d3; cursor: pointer; }
+
+.team-gallery__img-wrapper:hover .team-gallery__layer { opacity: 1; }
+
+.team-gallery__img { position: relative; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; vertical-align: bottom; }
+
+.team-gallery__layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: linear-gradient(-180deg, rgba(243, 129, 129, 0.8) 0%, rgba(252, 227, 138, 0.8) 100%); transition: 0.5s; opacity: 0; }
+
+.layer-icons__wrapper { display: -ms-flexbox; display: flex; width: 60%; height: 60px; }
+
+.layer-icons__wrapper .icon { -ms-flex: 1; flex: 1; height: 100%; color: #f38181; margin: 0; padding: 15px 10px; background: #fce38a; transition: 0.5s; border-right: 1px solid #f38181; cursor: pointer; }
+
+.layer-icons__wrapper .icon:nth-last-of-type(1) { border-right: none; }
+
+.layer-icons__wrapper .icon:hover { background: #f38181; color: #fff; }
+
+.team-gallery__title { -ms-flex-direction: column; flex-direction: column; font-size: 14px; font-family: "Montserrat", sans-serif; padding-top: 20px; text-transform: uppercase; font-weight: 700; }
+
+.team-gallery__subtitle { font-family: "Roboto", sans-serif; margin-top: 5px; color: #999; font-size: 15px; line-height: 24px; text-transform: capitalize; font-weight: 300; font-style: italic; }
