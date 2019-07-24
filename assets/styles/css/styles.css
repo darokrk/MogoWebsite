@@ -223,3 +223,7 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 .work-gallery__title { font-size: 14px; text-transform: uppercase; margin-top: 10px; }
 
 .work-gallery__subtitle { font-family: "Roboto", sans-serif; font-style: italic; font-size: 15px; line-height: 24px; margin-top: 10px; }
+
+.testimonial .item { max-width: 90%; }
+
+.testimonial .quotes-icon__wrapper { width: 200px; height: 200px; background: url("../../images/Layer 36.jpg") no-repeat; background-size: cover; background-position: center; padding: 0; margin-left: 40px; border-radius: 50%; border: none; }
