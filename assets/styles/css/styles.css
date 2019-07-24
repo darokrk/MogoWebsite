@@ -227,3 +227,9 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 .testimonial .item { max-width: 90%; }
 
 .testimonial .quotes-icon__wrapper { width: 200px; height: 200px; background: url("../../images/Layer 36.jpg") no-repeat; background-size: cover; background-position: center; padding: 0; margin-left: 40px; border-radius: 50%; border: none; }
+
+.people { position: relative; }
+
+.people:after { content: ""; display: block; position: absolute; top: 0; left: 0; background: url("../../images/Layer 53.jpg") no-repeat; background-size: cover; width: 100%; height: 100%; opacity: 0.2; z-index: -1; }
+
+.people .container { min-height: 830px; }
