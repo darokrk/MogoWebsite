@@ -708,3 +708,56 @@ $green: #95e1d3;
   @extend .flex-center;
   min-height: 155px;
 }
+
+//--- WORK ---//
+
+.work-gallery__wrapper {
+  min-height: 780px;
+  margin: 200px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.work-gallery__element {
+  &:nth-of-type(3) {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
+    background: url("../../images/Layer 34.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &:nth-of-type(1) {
+    background: url("../../images/Layer 26.jpg") no-repeat;
+  }
+  &:nth-of-type(2) {
+    background: url("../../images/Layer 33.jpg") no-repeat;
+  }
+  &:nth-of-type(4) {
+    background: url("../../images/Layer 31.jpg") no-repeat;
+    background-position: top;
+  }
+  &:nth-of-type(5) {
+    background: url("../../images/Layer 35.jpg") no-repeat;
+    background-position-x: -180px;
+    background-size: inherit;
+  }
+  &:nth-of-type(6) {
+    background: url("../../images/Layer 29.jpg") no-repeat;
+  }
+  &:nth-of-type(7) {
+    background: url("../../images/Layer 32.jpg") no-repeat;
+    background-position: top;
+  }
+  &:nth-of-type(1),
+  &:nth-of-type(2),
+  &:nth-of-type(4),
+  &:nth-of-type(6),
+  &:nth-of-type(7) {
+    background-position: bottom;
+    background-size: cover;
+  }
+  &:nth-of-type(4),
+  &:nth-of-type(7) {
+    background-position: top;
+  }
+}
