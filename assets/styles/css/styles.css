@@ -10,7 +10,7 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 
 .bg--gradient, .header__content-wrapper, .about-gallery__layer, .work-gallery__layer { background-image: linear-gradient(-180deg, #f38181, #fce38a); }
 
-.flex-center, .header__content-wrapper, .header__slogan-wrapper, .section-header__wrapper, .about-gallery__layer, .facts-content__element, .team-gallery__layer, .team-gallery__title, .logos__element, .work-gallery__layer { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.flex-center, .header__content-wrapper, .header__slogan-wrapper, .section-header__wrapper, .about-gallery__layer, .facts-content__element, .team-gallery__layer, .team-gallery__title, .logos__element, .work-gallery__layer, .element__photo-date { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .header { height: 100vh; background: url("../../images/Layer 15.jpg") no-repeat center; position: relative; }
 
@@ -249,3 +249,23 @@ body { font-size: 1.6rem; margin: 0; padding: 0; font-family: "Montserrat", sans
 .people-content__job::after { content: ""; display: block; width: 60px; height: 3px; margin: 10px 0; background: #f38181; }
 
 .people-content__text { color: #999; }
+
+.blog .container { padding: 0; }
+
+.blog-gallery__wrapper { display: -ms-grid; display: grid; margin: 200px 0; -ms-grid-columns: (minmax(auto, 390px))[auto-fill]; grid-template-columns: repeat(auto-fill, minmax(auto, 390px)); -ms-flex-pack: justify; justify-content: space-between; grid-row-gap: 20px; }
+
+.blog-element { padding: 10px; }
+
+.blog-element:nth-of-type(1) .blog-element__photo { background: url("../../images/Layer 54.jpg") no-repeat; background-position: bottom; background-position-x: right; }
+
+.blog-element:nth-of-type(2) .blog-element__photo { background: url("../../images/Layer 55.jpg") no-repeat; background-size: cover; background-position: center; }
+
+.blog-element:nth-of-type(3) .blog-element__photo { background: url("../../images/Layer 57.jpg") no-repeat; background-size: cover; background-position: center; }
+
+.blog-element__photo { position: relative; height: 240px; }
+
+.element__photo-date { position: absolute; bottom: 5%; left: -10px; -ms-flex-direction: column; flex-direction: column; width: 60px; height: 70px; background-color: #95e1d3; color: #fff; font-family: "Roboto", sans-serif; padding: 10px; }
+
+.photo-date__number { font-family: "Montserrat", sans-serif; font-size: 30px; font-weight: 700; }
+
+.photo-date__month { font-size: 15px; font-style: italic; font-weight: 300; }
