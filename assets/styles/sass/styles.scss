@@ -447,11 +447,13 @@ $green: #95e1d3;
   height: 100%;
   align-items: center;
   border: 1px solid rgba(151, 151, 151, 0.4);
+
   .icon {
     margin-top: 0;
     margin: 0 20px;
     cursor: pointer;
   }
+
   .icon-circle-down {
     width: 20px;
     height: 20px;
@@ -478,11 +480,13 @@ $green: #95e1d3;
     background-color: rgba(255, 255, 255, 0.4);
     width: 10px;
   }
+
   &::-webkit-scrollbar-track {
     background-color: rgba(151, 151, 151, 0.4);
     margin: 5px;
     border-radius: 20px;
   }
+
   &::-webkit-scrollbar-thumb {
     background-color: $green;
     border-radius: 20px;
@@ -537,10 +541,12 @@ $green: #95e1d3;
 .owl-next {
   right: 1vmin;
 }
+
 .owl-prev span,
 .owl-next span {
   color: #ccc;
   font-size: 50px;
+
   &:hover {
     color: $red;
   }
@@ -576,6 +582,7 @@ $green: #95e1d3;
   font-family: "Kaushan Script", cursive;
   color: black;
   margin-top: 10px;
+
   &::before {
     content: "";
     display: block;
@@ -607,15 +614,18 @@ $green: #95e1d3;
   height: 470px;
   margin: 0;
   transition: 0.8s;
+
   &:nth-of-type(1) {
     .team-gallery__img {
       object-position: 20%;
     }
   }
+
   &:hover {
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px 0 0 $green;
     cursor: pointer;
+
     .team-gallery__layer {
       opacity: 1;
     }
@@ -650,6 +660,7 @@ $green: #95e1d3;
   display: flex;
   width: 60%;
   height: 60px;
+
   .icon {
     flex: 1;
     height: 100%;
@@ -660,9 +671,11 @@ $green: #95e1d3;
     transition: 0.5s;
     border-right: 1px solid $red;
     cursor: pointer;
+
     &:nth-last-of-type(1) {
       border-right: none;
     }
+
     &:hover {
       background: $red;
       color: $white;
@@ -679,6 +692,7 @@ $green: #95e1d3;
   text-transform: uppercase;
   font-weight: 700;
 }
+
 .team-gallery__subtitle {
   font-family: "Roboto", sans-serif;
   margin-top: 5px;
@@ -721,11 +735,13 @@ $green: #95e1d3;
 .work-gallery__element {
   position: relative;
   cursor: pointer;
+
   &:hover {
     .work-gallery__layer {
       opacity: 0.9;
     }
   }
+
   &:nth-of-type(3) {
     grid-column: 3 / span 1;
     grid-row: 1 / span 2;
@@ -733,28 +749,35 @@ $green: #95e1d3;
     background-position: center;
     background-size: cover;
   }
+
   &:nth-of-type(1) {
     background: url("../../images/Layer 26.jpg") no-repeat;
   }
+
   &:nth-of-type(2) {
     background: url("../../images/Layer 33.jpg") no-repeat;
   }
+
   &:nth-of-type(4) {
     background: url("../../images/Layer 31.jpg") no-repeat;
     background-position: top;
   }
+
   &:nth-of-type(5) {
     background: url("../../images/Layer 35.jpg") no-repeat;
     background-position-x: -180px;
     background-size: inherit;
   }
+
   &:nth-of-type(6) {
     background: url("../../images/Layer 29.jpg") no-repeat;
   }
+
   &:nth-of-type(7) {
     background: url("../../images/Layer 32.jpg") no-repeat;
     background-position: top;
   }
+
   &:nth-of-type(1),
   &:nth-of-type(2),
   &:nth-of-type(4),
@@ -763,6 +786,7 @@ $green: #95e1d3;
     background-position: bottom;
     background-size: cover;
   }
+
   &:nth-of-type(4),
   &:nth-of-type(7) {
     background-position: top;
@@ -781,6 +805,7 @@ $green: #95e1d3;
   color: $white;
   opacity: 0;
   transition: 0.5s;
+
   .icon-image {
     width: 2em;
     height: 2em;
@@ -809,6 +834,7 @@ $green: #95e1d3;
   .item {
     max-width: 90%;
   }
+
   .quotes-icon__wrapper {
     width: 200px;
     height: 200px;
@@ -826,6 +852,7 @@ $green: #95e1d3;
 
 .people {
   position: relative;
+
   &:after {
     content: "";
     display: block;
@@ -848,14 +875,17 @@ $green: #95e1d3;
   justify-content: center;
   padding: 50px 0;
 }
+
 .people-element__wrapper {
   height: 240px;
   display: flex;
 }
+
 .people-element__img {
   flex: 1;
   margin-bottom: auto;
 }
+
 .people-element__content {
   flex: 5;
   padding: 10px 20px;
@@ -881,6 +911,7 @@ $green: #95e1d3;
 
 .people-content__job {
   font-style: italic;
+
   &::after {
     content: "";
     display: block;
@@ -892,5 +923,111 @@ $green: #95e1d3;
 }
 
 .people-content__text {
+  color: $grey;
+}
+
+//--- BLOG ---//
+
+.blog {
+  .container {
+    padding: 0;
+  }
+}
+
+.blog-gallery__wrapper {
+  display: grid;
+  margin: 200px 0;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 390px));
+  justify-content: space-between;
+  grid-row-gap: 20px;
+}
+
+.blog-element {
+  padding: 10px;
+  &:nth-of-type(1) {
+    .blog-element__photo {
+      background: url("../../images/Layer\ 54.jpg") no-repeat;
+      background-position: bottom;
+      background-position-x: right;
+    }
+  }
+  &:nth-of-type(2) {
+    .blog-element__photo {
+      background: url("../../images/Layer\ 55.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  &:nth-of-type(3) {
+    .blog-element__photo {
+      background: url("../../images/Layer\ 57.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.blog-element__photo {
+  position: relative;
+  height: 240px;
+}
+.element__photo-date {
+  @extend .flex-center;
+  position: absolute;
+  bottom: 5%;
+  left: -10px;
+  flex-direction: column;
+  width: 60px;
+  height: 70px;
+  background-color: $green;
+  color: $white;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+.photo-date__number {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+.photo-date__month {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.element-content__title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333;
+  margin: 15px 0;
+}
+.element-content__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: $grey;
+  margin-top: 0;
+}
+
+.element-content__line {
+  border-color: #e5e5e5;
+  opacity: 0.4;
+}
+
+.blog-element__icons {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  .icon {
+    color: $green;
+  }
+}
+
+.element-icons__number {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  margin: 0 10px;
   color: $grey;
 }
