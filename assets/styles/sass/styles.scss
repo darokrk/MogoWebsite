@@ -1,9 +1,10 @@
-*,
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 *::before,
 *::after {
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -936,7 +937,7 @@ $green: #95e1d3;
 
 .blog-gallery__wrapper {
   display: grid;
-  margin: 200px 0;
+  padding-bottom: 60px;
   grid-template-columns: repeat(auto-fill, minmax(auto, 390px));
   justify-content: space-between;
   grid-row-gap: 20px;
