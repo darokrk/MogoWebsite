@@ -1032,3 +1032,55 @@ $green: #95e1d3;
   margin: 0 10px;
   color: $grey;
 }
+
+//--- MAP ---//
+
+.map {
+  &__container {
+    position: relative;
+    min-height: 200px;
+    @extend .flex-center;
+    flex-direction: column;
+    background: url("../../images/Layer\ 59.jpg") no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin-bottom: 100px;
+  }
+  &__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eaeaea;
+    opacity: 0.8;
+  }
+  .icon {
+    width: 2em;
+    height: 2em;
+    position: relative;
+    z-index: 1;
+    color: $red;
+  }
+  &__btn {
+    position: relative;
+    background: none;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    color: $red;
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      margin: 15px auto 0;
+      background: $red;
+    }
+  }
+}
